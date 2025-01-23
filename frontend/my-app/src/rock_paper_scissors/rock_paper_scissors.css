@@ -1,0 +1,100 @@
+/* General Styling */
+.App {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+    background: linear-gradient(135deg, #ff5e62, #ffeb3b);
+    padding: 50px;
+    border-radius: 10px;
+    color: white;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .choices button {
+    font-size: 1.2em;
+    padding: 15px 30px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    color: white;
+  }
+  
+  .choices button:hover {
+    transform: scale(1.1);
+  }
+  
+  .choices button:active {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  button:nth-child(1) {
+    background-color: #8a0b94; /* Red */
+  }
+  
+  button:nth-child(2) {
+    background-color: #3cb371; /* Green */
+  }
+  
+  button:nth-child(3) {
+    background-color: #1e90ff; /* Blue */
+  }
+  
+  /* Result Styling */
+  .result p {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #f8f8f8;
+    font-weight: bold;
+  }
+  
+  .result p:first-child {
+    color: #ffeb3b; /* Yellow for user's choice */
+  }
+  
+  .result p:last-child {
+    color: #ff5e62; /* Orange for computer's choice */
+  }
+  
+  /* Score Styling */
+  .score {
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #ffffff;
+  }
+  
+  .score p {
+    margin: 5px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .App {
+      padding: 30px;
+      margin: 10px;
+    }
+  
+    h1 {
+      font-size: 2em;
+    }
+  
+    .choices button {
+      font-size: 1em;
+      padding: 10px 20px;
+    }
+  
+    .result p {
+      font-size: 1.2em;
+    }
+  }
+  
